@@ -2,6 +2,11 @@ package iit.oop.inheritence.bicycle;
 
 public class MountainBike extends Bicycle {
         public int seatHeight;
+        
+        public MountainBike()
+        {
+        	
+        }
 
 		public MountainBike(int gear, int speed, int seatHeight) {
 			super(gear, speed);
@@ -11,6 +16,10 @@ public class MountainBike extends Bicycle {
 		public void setHeight(int newValue)
 		{
 			this.seatHeight=newValue;
+		}
+		public void mountainBikeInter()
+		{
+			System.out.println("This is intermediary class");
 		}
 
 		@Override
